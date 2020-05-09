@@ -1,15 +1,10 @@
 package controller;
 
-import model.Product;
 import model.Receipt;
 import model.ReceiptDetail;
-import model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import service.AllService;
-import service.StudentService;
-
-import java.util.List;
 
 /**
  * Created by CoT on 7/29/18.

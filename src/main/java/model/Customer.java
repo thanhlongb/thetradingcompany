@@ -3,8 +3,8 @@ package model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "product")
-public class Product {
+@Table(name = "customer")
+public class Customer {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,16 +12,14 @@ public class Product {
     @Column
     private String name;
     @Column
-    private String model;
+    private String address;
     @Column
-    private String brand;
+    private String phone;
     @Column
-    private String company;
+    private String fax;
     @Column
-    private String description;
-    @ManyToOne
-    private Category category;
+    private String email;
     @Column
-    private Float price;
+    private String contact_person;
 
 }
