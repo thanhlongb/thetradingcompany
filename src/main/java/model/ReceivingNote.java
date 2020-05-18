@@ -17,7 +17,7 @@ public class ReceivingNote {
     private Staff staff;
     @OneToMany(mappedBy = "receivingNote", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<ReceivingNoteDetail> receivingNoteDetails;
-    @Column
+    @Column(updatable = false)
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationTime;

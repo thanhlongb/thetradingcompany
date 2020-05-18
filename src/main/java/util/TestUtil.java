@@ -52,6 +52,9 @@ public class TestUtil {
     }
 
     public static Gson modifiedGson() {
+        // reference: https://stackoverflow.com/questions/6873020/gson-date-format
+        // author: M.L (https://stackoverflow.com/users/439945/m-l)
+
         GsonBuilder builder = new GsonBuilder();
 
         builder.registerTypeAdapter(Date.class, new JsonDeserializer<Date>() {

@@ -21,7 +21,7 @@ public class Invoice {
     private float totalValue;
     @OneToMany(mappedBy = "invoice", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<InvoiceDetail> invoiceDetails;
-    @Column(updatable = false) // FIXME: testing this shit out
+    @Column(updatable = false)
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationTime;

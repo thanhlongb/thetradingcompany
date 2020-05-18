@@ -17,7 +17,7 @@ public class DeliveryNote {
     private Customer customer;
     @OneToMany(mappedBy = "deliveryNote", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<DeliveryNoteDetail> deliveryNoteDetails;
-    @Column
+    @Column(updatable = false)
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationTime;
